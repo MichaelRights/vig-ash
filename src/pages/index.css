@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("/fonts/GHEAMariamReg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("/fonts/GHEAMariamBld.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("/fonts/GHEAMariamBlit.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GHEA Mariam";
+  src: url("/fonts/GHEAMariamRlt.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "GHEA Mariam" !important;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  overflow: hidden;
+}
+
+.section-1 {
+  background: url("../images/construction-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.icon::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 2rem;
+}
+
+.icon-brush::before {
+  content: url(../icons/brush.svg);
+}
+
+.icon-tools::before {
+  content: url(../icons/tools.svg);
+}
+
+.icon-building::before {
+  content: url(../icons/building.svg);
+}
+
+.icon-location::before {
+  content: url(../icons/location.svg);
+  margin-right: 1.5rem;
+}
+
+.icon-phone::before {
+  content: url(../icons/phone.svg);
+  margin-right: 1.5rem;
+}
+
+.icon-mail::before {
+  content: url(../icons/mail.svg);
+  margin-right: 1.5rem;
+}
+
+.project-item {
+  display: flex;
+  height: 320px;
+  width: 320px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='80%2c 80' stroke-dashoffset='40' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.project-image-1 {
+  height: 280px;
+  width: 280px;
+  margin: auto;
+
+  background: url("../images/project-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-image-2 {
+  background: url("../images/project-image-2.jpg");
+  height: 280px;
+  width: 280px;
+  margin: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-image-3 {
+  background: url("../images/project-image-3.jpg");
+  height: 280px;
+  width: 280px;
+  margin: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
