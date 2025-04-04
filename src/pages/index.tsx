@@ -10,10 +10,13 @@ const IndexPage: React.FC<PageProps> = () => {
       display="flex"
       flexDirection="column"
       component="main"
+      overflow="hidden"
+      position="relative"
     >
       <Box
         mx={1}
         position="sticky"
+        overflow="hidden"
         top={0}
         width="100vw"
         height={80}
@@ -25,9 +28,15 @@ const IndexPage: React.FC<PageProps> = () => {
       >
         <Typography variant="h6">ՎԻԳ - ԱՇ ՍՊԸ</Typography>
         <Box display="flex" flexDirection="row" gap={4}>
-          <Typography variant="body1">Ծառայություններ</Typography>
-          <Typography variant="body1">Նախագծեր</Typography>
-          <Typography variant="body1">Հետադարձ կապ</Typography>
+          <Typography component="a" href="#services" variant="body1">
+            Ծառայություններ
+          </Typography>
+          <Typography component="a" href="#projects" variant="body1">
+            Նախագծեր
+          </Typography>
+          <Typography component="a" href="#contacts" variant="body1">
+            Հետադարձ կապ
+          </Typography>
         </Box>
       </Box>
       <Box
@@ -127,39 +136,70 @@ const IndexPage: React.FC<PageProps> = () => {
           </Box>
         </Box>
       </Box>
-      <Box minHeight={550} id="contact" component="section">
-        <Grid2 container direction="column" minHeight={550}>
-          <Box height={66} sx={{ background: "#2A2A2A" }}></Box>
-          <Box display="flex" flexDirection="column" pt={6} pl={9}>
+      <Box
+        minHeight={550}
+        id="contacts"
+        className="section-3"
+        component="section"
+      >
+        <Grid2
+          height={550}
+          display="flex"
+          justifyContent="center"
+          style={{ background: "#1F1F1FD9" }}
+        >
+          <Grid2
+            container
+            direction="column"
+            px={{ lg: 28, md: 20, xs: 4 }}
+            alignSelf="center"
+            justifyContent="center"
+            alignItems="center"
+            style={{ background: "#FFB400" }}
+            minHeight={252}
+          >
             <Box
-              marginTop={2}
-              className="icon icon-location"
               display="flex"
+              flexDirection="column"
+              justifyContent="center"
               alignItems="center"
             >
-              <Typography variant="body1">
-                ք. Աշտարակ Արա֊1 թաղամաս 5 փ. 44֊47
+              <Typography fontWeight="700" variant="h6">
+                ՀԵՏԱԴԱՐՁ ԿԱՊ
               </Typography>
+              <Box width={100} mt={1} borderBottom="2px solid black" />
             </Box>
-            <Box
-              marginTop={2}
-              className="icon icon-phone"
-              display="flex"
-              alignItems="center"
-            >
-              <Typography variant="body1">+37494242827</Typography>
+            <Box display="flex" flexDirection="column">
+              <Box
+                marginTop={2}
+                className="icon icon-location"
+                display="flex"
+                alignItems="center"
+              >
+                <Typography variant="body1">
+                  ք. Աշտարակ Արա֊1 թաղամաս 5 փ. 44֊47
+                </Typography>
+              </Box>
+              <Box
+                marginTop={2}
+                className="icon icon-phone"
+                display="flex"
+                alignItems="center"
+              >
+                <Typography variant="body1">+37494242827</Typography>
+              </Box>
+              <Box
+                marginTop={2}
+                className="icon icon-mail"
+                display="flex"
+                alignItems="center"
+              >
+                <Typography variant="body1">
+                  zaven.qasinyan85@gmail.com
+                </Typography>
+              </Box>
             </Box>
-            <Box
-              marginTop={2}
-              className="icon icon-mail"
-              display="flex"
-              alignItems="center"
-            >
-              <Typography variant="body1">
-                zaven.qasinyan85@gmail.com
-              </Typography>
-            </Box>
-          </Box>
+          </Grid2>
         </Grid2>
       </Box>
     </Box>

@@ -27,6 +27,7 @@
 }
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   margin: 0;
   font-family: "GHEA Mariam" !important;
@@ -40,12 +41,33 @@ main {
   overflow: hidden;
 }
 
+a {
+  color: black;
+  text-decoration-color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  height: 100vh;
+}
+
 .section-1 {
   background: url("../images/construction-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+.section-3 {
+  background: url("../images/construction-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .icon::before {
   width: 1.5rem;
   height: 1.5rem;
